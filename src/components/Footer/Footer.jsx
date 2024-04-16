@@ -1,8 +1,8 @@
-
+import "./Footer.scss"
 const Footer = () => {
   return (
-    <div>
-      
+    <div className="footer">
+      <p>© Copyright 2024 | SedaDiriker</p>
     </div>
   )
 }

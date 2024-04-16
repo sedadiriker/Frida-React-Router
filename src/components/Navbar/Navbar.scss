@@ -1,19 +1,21 @@
 @import "../../SCSS/mixins";
+@import "../../SCSS/variables";
 
 .nav {
-  border: 1px solid red;
+  // border: 1px solid red;
   padding: 1rem 3rem;
   position: fixed;
   width: 100%;
   background: transparent;
   .navbar {
     @include flex(end, 5rem);
-    & .home,
-    .about,
-    .projects,
-    .contact {
+    & .home-nav,
+    .about-nav,
+    .projects-nav,
+    .contact-nav {
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 2rem;
+      color: $text-color;
     }
   }
 }

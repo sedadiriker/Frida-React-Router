@@ -4,10 +4,10 @@ const Navbar = () => {
   return (
     <div className="nav">
       <ul className="navbar">
-        <NavLink className="home">Home</NavLink>
-        <NavLink className="about">About</NavLink>
-        <NavLink className="projects">Projects</NavLink>
-        <NavLink className="contact">Contact</NavLink>
+        <NavLink to="/" className="home-nav">Home</NavLink>
+        <NavLink to="/about" className="about-nav">About</NavLink>
+        <NavLink to="/projects" className="projects-nav">Projects</NavLink>
+        <NavLink to="/contact" className="contact-nav">Contact</NavLink>
       </ul>
     </div>
   )
