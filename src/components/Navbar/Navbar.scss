@@ -7,6 +7,8 @@
   position: fixed;
   width: 100%;
   background: transparent;
+  font-family: $nav-fonts ;
+
   .navbar {
     @include flex(end, 5rem);
     & .home-nav,

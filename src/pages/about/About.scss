@@ -1,0 +1,73 @@
+@import "../../SCSS/variables";
+
+.about{
+    font-family: $primary-fonts;
+   .about-1{
+    height: 85vh;
+    background: linear-gradient(
+    to right,
+    rgba($primary-color, 1.1),
+    rgba($primary-color, 0.1),
+    ),
+    url($pathName2);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   }
+   .about-2{
+    height: 55vh;
+    background: linear-gradient(
+    to right,
+    rgba($primary-color, 1.1),
+    rgba($primary-color, 0.1),
+    ),
+    url($pathName2);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   }
+    .about-text{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 35%;
+        // border: 1x solid red;
+        font-size: 1.5rem;
+        color: $text-color;
+        & .about-title{
+            color: $secondaryColor;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-family: $titleFonts;
+        }
+        & .finish-title{
+            font-size: 2rem;
+            margin-top: 1rem;
+            font-family: $titleFonts;
+            text-align: end;
+        }
+        .name-title{
+            font-size: 2.5rem;
+            font-family: $titleFonts;
+            font-weight: bold;
+            text-align: end;
+            color: rgb(169, 107, 107);
+        }
+    }
+    & .kronoloji{
+        margin-top: 7rem;
+        & p{
+            margin-bottom: 1rem;
+            opacity: 0; // Paragrafları başlangıçta görünmez yapın
+            transition: opacity 0.5s ease-in-out; // Geçiş efektini ayarlayın
+        }
+        .animate{
+            opacity: 1; // Paragrafları görünür hale getirin
+          }
+        & span{
+            color: $secondaryColor;
+        }
+    }
+}
