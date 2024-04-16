@@ -1,0 +1,58 @@
+@import "../../SCSS/variables";
+.projects{
+    .image{
+        height: 65vh;
+    background: linear-gradient(
+    to bottom,
+    rgba($primary-color, 1.1),
+    rgba(#282419, 0.4),
+    ),
+    url($pathName3);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .paints{
+        text-align: center;
+        // border: 1px solid red;
+        padding: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f6f4ec;
+background-image: linear-gradient(132deg, #282419 0%, #3c6f65 100%);
+
+
+        .card{
+            width: 25rem;
+            height: 500px;
+            & img{
+                outline: 5px solid black;
+                outline-offset: 5px;
+                border: 5px solid black;
+                width: 90%;
+                height: 400px;
+                opacity: 0.7;
+                transition: all 1s;
+               
+                &:hover{
+                    box-shadow: 2px 3px 35px black;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            
+            }
+            & .paint-name{
+                margin-top: 2rem;
+                font-size: 1.5rem;
+                font-family: $titleFonts;
+                color: $white;
+            }
+            
+        }
+        
+    }
+}

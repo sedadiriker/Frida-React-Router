@@ -8,6 +8,7 @@
   width: 100%;
   background: transparent;
   font-family: $nav-fonts ;
+  z-index: 5;
 
   .navbar {
     @include flex(end, 5rem);
@@ -16,8 +17,26 @@
     .projects-nav,
     .contact-nav {
       text-decoration: none;
-      font-size: 2rem;
-      color: $text-color;
+      font-size: 2.5rem;
+      color: $secondaryColor;
+      position: relative;
+      font-weight: bold;
+
+      &:after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: rgb(247, 203, 203);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        transition: width 0.3s
+      }
+      
+      &:hover::after {
+        width: 100%; 
+      }
     }
+    
   }
 }
