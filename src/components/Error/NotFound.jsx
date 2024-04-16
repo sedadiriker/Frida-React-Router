@@ -1,8 +1,8 @@
-
+import "./NotFound.scss"
 const NotFound = () => {
   return (
-    <div>
-      
+    <div className="notfound">
+      <img src="/images/notfound.webp" alt="notfound" />
     </div>
   )
 }

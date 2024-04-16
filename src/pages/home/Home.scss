@@ -20,6 +20,7 @@
         width: 50%;
         text-align: end;
         color: $text-color;
+        animation: moveleft 1s ease forwards;
         & p{
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -33,4 +34,66 @@
         }
     }
     
+}
+
+
+@keyframes moveleft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+@media screen and (max-width:1215px) {
+  .home{
+    .text{
+      .name{
+        font-size: 5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:790px) {
+  .home{
+    background-position: center;
+    .text{
+      & p{
+        font-size: 1rem;
+      }
+      .name{
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .home{
+    background-position: left;
+    .text{
+      top: 40%;
+      right: 0;
+        left: 2%;
+      
+      
+    }
+  }
+}
+@media screen and (max-width:508px) {
+  .home{
+    background-position: left;
+    .text{
+      top: 40%;
+      right: 0;
+        left: 2%;
+      & p{
+        font-size: 14px;
+      }
+      .name{
+        font-size: 2rem;
+      }
+    }
+  }
 }

@@ -16,10 +16,11 @@
     .paints{
         text-align: center;
         // border: 1px solid red;
-        padding: 3rem;
+        padding: 3rem 3rem 4rem;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
+        row-gap: 8rem;
         justify-content: center;
         min-height: 100vh;
         background-color: #f6f4ec;

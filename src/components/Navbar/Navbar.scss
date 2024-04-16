@@ -40,3 +40,24 @@
     
   }
 }
+
+@media screen and (max-width:790px) {
+  .navbar {
+    & .home-nav,
+    .about-nav,
+    .projects-nav,
+    .contact-nav {
+      font-size: 1.5rem !important;
+    }
+}}
+@media screen and (max-width:508px) {
+  .navbar {
+    justify-content: center !important;
+    gap: 2rem !important;
+    & .home-nav,
+    .about-nav,
+    .projects-nav,
+    .contact-nav {
+      font-size: 1.2rem !important;
+    }
+}}
