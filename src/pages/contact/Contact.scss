@@ -1,81 +1,117 @@
 @import "../../SCSS/variables";
 
-.contact{
-    min-height: 100vh;
-    background: linear-gradient(
-    to left,
-    rgba($primary-color, 1.1),
-    rgba($primary-color, 0.5),
+.contact {
+  height: 100vh;
+  background: linear-gradient(
+      to left,
+      rgba($primary-color, 1.1),
+      rgba($primary-color, 0.5)
     ),
     url($pathName4);
-    background-position:left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .icons{
-        // border: 1px solid red;
-        display: flex;
-        gap: 4rem;
-        flex-direction: column;
-        position: fixed;
-        top: 30%;
-        left: 20px;
-        font-size: 3rem;
-        animation: yukarı 2s ease forwards;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .icons {
+    // border: 1px solid red;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: 20px;
+    font-size: 3rem;
+    animation: yukarı 2s ease forwards;
 
-        & a{
-            color: white;
-            animation: yukarı-text 2s ease forwards;
-            & :hover{
-                color: rgb(5, 75, 95);
-            }
-        }
+    & a {
+      color: white;
+      animation: yukarı-text 2s ease forwards;
+      & :hover {
+        color: rgb(5, 75, 95);
+      }
     }
-    .address{
-        font-family: $primary-fonts;;
-        font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.71);
-        position: absolute;
-        top: 25%;
-        right: 5%;
-        width:550px;
-        height:450px;
-        iframe{
-            margin-top: 1rem;
-            opacity: 0.5;
-            transition: 1s ease-in-out;
-            &:hover{
-                opacity: 1;
-            }
-        }
+  }
+  .address {
+    font-family: $primary-fonts;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.71);
+    position: absolute;
+    top: 25%;
+    width: 450px;
+    right: 2%;
+    text-align: center;
+    iframe {
+      margin-top: 1rem;
+      opacity: 0.5;
+      transition: 1s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
     }
+  }
 }
-
 
 @keyframes yukarı {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(50%);
-        opacity: 0.5;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-
-    }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes yukarı-text {
-    from {
-        color: rgb(5, 75, 95);
-    }
-    to {
-        color: rgb(60, 133, 153);
+  from {
+    color: rgb(5, 75, 95);
+  }
+  to {
+    color: rgb(60, 133, 153);
+  }
+  to {
+    color: rgb(192, 224, 233);
+  }
+}
 
-    }
-    to {
-        color: rgb(192, 224, 233);
-
-    }
+@media screen and (max-width: 1130px) {
+  .address {
+    right: 1% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .address {
+    font-size: 1rem !important;
+  }
+  .icons{
+    font-size: 2rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+   
+  .address {
+    font-size: 10px !important;
+    top: 50% !important;  
+    left: -7%; 
+  }
+  .icons{
+    top: 10% !important;
+    font-size: 2rem !important;
+  }
+}
+@media screen and (max-width: 321px) {
+   .contact{
+    min-height: 100vh !important;
+   }
+  .address {
+    font-size: 10px !important;
+    top: 30% !important;  
+    left: -20%; 
+  }
+  .icons{
+    top: 10% !important;
+    font-size: 2rem !important;
+  }
 }
