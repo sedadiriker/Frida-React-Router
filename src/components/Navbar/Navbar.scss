@@ -1,0 +1,19 @@
+@import "../../SCSS/mixins";
+
+.nav {
+  border: 1px solid red;
+  padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  .navbar {
+    @include flex(end, 5rem);
+    & .home,
+    .about,
+    .projects,
+    .contact {
+      text-decoration: none;
+      font-size: 1.7rem;
+    }
+  }
+}
